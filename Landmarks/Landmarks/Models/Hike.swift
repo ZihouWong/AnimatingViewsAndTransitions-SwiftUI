@@ -7,7 +7,8 @@ The model for a hike.
 
 import SwiftUI
 
-struct Hike: Codable, Hashable, Identifiable {
+struct Hike: Codable {
+//    : Codable, Hashable, Identifiable
     var name: String
     var id: Int
     var distance: Double
@@ -29,3 +30,4 @@ struct Hike: Codable, Hashable, Identifiable {
         var heartRate: Range<Double>
     }
 }
+
